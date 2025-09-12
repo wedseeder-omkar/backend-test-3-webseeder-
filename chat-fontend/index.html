@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.socket.io/4.0.1/socket.io.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Chat App</h1>
+
+        <!-- User Registration Form -->
+        <div id="register-section">
+            <h2>Create a User</h2>
+            <form id="register-form">
+                <input type="text" id="username" placeholder="Enter Username" required>
+                <button type="submit">Create User</button>
+            </form>
+        </div>
+
+        <!-- User List -->
+        <div id="user-list-section">
+            <h2>Users</h2>
+            <ul id="user-list"></ul>
+        </div>
+
+        <!-- Send Message Form -->
+        <div id="message-section">
+            <h2>Send Message</h2>
+            <form id="message-form">
+                <input type="text" id="receiver" placeholder="Receiver Username" required>
+                <input type="text" id="message-text" placeholder="Message" required>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+
+        <!-- Message Display -->
+        <div id="messages-section">
+            <h2>Chat</h2>
+            <div id="messages"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
