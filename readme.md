@@ -1,30 +1,32 @@
 // API Documentation 
-Base_url in this case is (localhost:3000)
 
+Base_url in this case is (localhost:3000)
 postman testing as well as api working 
 
-/Get : Base_url/users
-    Description:- "get all the user"
-    header :- appliaction/json 
-    eg :-  { "object.id"  : "68c3ecb0c3e7ddb21cac194f" , "username" : "omkar"  }
+all the route url :-
 
-/post : Base_url/users 
-    Description:- " create a new user on the db "
-    header:- appliaction/json 
-    post:- { "username" : "omkar" }
-    res:-  { "object.id"  : "68c3ecb0c3e7ddb21cac194f" , "username" : "omkar"  }
-
-/post : Base_url/message/
-    eg.url:- localhost:3000/messages/68c3ecb0c3e7ddb21cac194f/68c3e14159a070d23d33986c
-    Description:- "send the text from user_1 to user_2" 
-    header:- appliaction/json
-    post:- { "sender": "68c3ecb0c3e7ddb21cac194f", "receiver": "68c3e14159a070d23d33986c", "text": "Hello, how are you?" }
-
-/Get : Base_url/message/user_1/User_2
-    eg.url:- localhost:3000/messages/68c3ecb0c3e7ddb21cac194f/68c3e14159a070d23d33986c
-    Description:- "get all the message betweemn user1 and user2 " 
-    header:- appliaction/json
-    eg:- { "sender": "68c3ecb0c3e7ddb21cac194f", "receiver": "68c3e14159a070d23d33986c", "text": "Hello, how are you?" }
+    /Get : Base_url/users
+        Description:- "get all the user"
+        header :- appliaction/json 
+        eg :-  { "object.id"  : "68c3ecb0c3e7ddb21cac194f" , "username" : "omkar"  }
+    
+    /post : Base_url/users 
+        Description:- " create a new user on the db "
+        header:- appliaction/json 
+        post:- { "username" : "omkar" }
+        res:-  { "object.id"  : "68c3ecb0c3e7ddb21cac194f" , "username" : "omkar"  }
+    
+    /post : Base_url/message/
+        eg.url:- localhost:3000/messages/68c3ecb0c3e7ddb21cac194f/68c3e14159a070d23d33986c
+        Description:- "send the text from user_1 to user_2" 
+        header:- appliaction/json
+        post:- { "sender": "68c3ecb0c3e7ddb21cac194f", "receiver": "68c3e14159a070d23d33986c", "text": "Hello, how are you?" }
+    
+    /Get : Base_url/message/user_1/User_2
+        eg.url:- localhost:3000/messages/68c3ecb0c3e7ddb21cac194f/68c3e14159a070d23d33986c
+        Description:- "get all the message betweemn user1 and user2 " 
+        header:- appliaction/json
+        eg:- { "sender": "68c3ecb0c3e7ddb21cac194f", "receiver": "68c3e14159a070d23d33986c", "text": "Hello, how are you?" }
 
 // Npm dependencies 
  
